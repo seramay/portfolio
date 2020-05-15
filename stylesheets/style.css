@@ -1,0 +1,85 @@
+/* general purpose */
+.h-60px{
+  height: 70px;
+}
+
+.h-100vh{
+  height: 100vh;
+}
+
+.ff-fantasy{
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+/* navbar */
+
+
+/* top-screen */
+.top-screen{
+  background-image: url("../photo-1517162024945-595ae6bca1a4.JPG");
+  background-size: cover;
+}
+
+/* footer */
+.copyright{
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 60px;
+}
+
+/*********************** test(test-pages, copy済み ***********************/
+
+/* linearベンダーは開始位置を、デフォルトは向かう方向を指定 */
+.bg-LinearGradientVenderTest{
+  background: -moz-linear-gradient(top, #aaaaaa, #555555);
+  background: -webkit-linear-gradient(top, #aaaaaa, #555555);
+  background: linear-gradient(to bottom, #aaaaaa, #555555);
+}
+/* 通常 */
+.bg-lineargradient1{
+  background: linear-gradient(to bottom, #aaaaaa, #555555);
+}
+/* 4色使用、割合分け */
+.bg-lineargradient2{
+  background: linear-gradient(to bottom, #cccccc, #990000 50%, #005500 80%, #000055);
+}
+/* 斜め方向、4色利用、割合分け */
+.bg-lineargradient3{
+  background: linear-gradient(to bottom right, #cccccc, #990000 50%, #005500 80%, #000055);
+}
+/* 角度指定(0は↑、90は→、180は↓、270は←)、4色利用、割合分け 
+  なお、角度はマイナス表記でも対応してるので -90とした場合、270の方向と同じになる。
+  また、ベンダーは90からデフォルト指定値を引くと同じ向きとなる*/
+.bg-lineargradient4{
+  background: linear-gradient(60deg, #cccccc, #990000 50%, #005500 80%, #000055);
+}
+
+/* radialはベンダー、デフォルト共に内→外の順で指定する、上記同様に多数色利用、割合表記が可能 */
+.bg-radialgradient1{
+  background: -moz-radial-gradient(#aaaaaa, #444444);
+  background: -webkit-radial-gradient(#aaaaaa, #444444);
+  background: radial-gradient(#aaaaaa, #444444);
+}
+
+/* 中央に行くにつれて透明になる */
+.bg-radialgradient2{
+  background: -moz-radial-gradient(transparent, #440044);
+  background: -webkit-radial-gradient(transparent, #440044);
+  background: radial-gradient(transparent, #440044);
+}
+
+/* 下に行くにつれて透明になり最下段は濃い青、割合分け */
+.bg-lineargradient5{
+  background: linear-gradient(to bottom, #cccccc, #990000 50%, transparent, #000055);
+}
+
+/* 下に行くにつれて半透明の色に変化してゆく、4色使用、割合分け */
+.bg-lineargradient6{
+  background: linear-gradient(to bottom, #cccccc, #990000 50%, rgba(0, 155, 0, 0.7) 80%, rgba(0, 0, 85, 0.5));
+}
+
+/* オーバーレイ、写真にグラデーションを重ねる,角度指定、3色、半透明 */
+.bg-lineargradient7{
+  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4) 80%), url("../photo-1517162024945-595ae6bca1a4.JPG");
+}
