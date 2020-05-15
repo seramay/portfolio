@@ -17,7 +17,7 @@
 
 /* top-screen */
 .top-screen{
-  background-image: url("../photo-1517162024945-595ae6bca1a4.JPG");
+  background-image: url("photo-1517162024945-595ae6bca1a4.JPG");
   background-size: cover;
 }
 
@@ -81,5 +81,5 @@
 
 /* オーバーレイ、写真にグラデーションを重ねる,角度指定、3色、半透明 */
 .bg-lineargradient7{
-  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4) 80%), url("../photo-1517162024945-595ae6bca1a4.JPG");
+  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4) 80%), url("photo-1517162024945-595ae6bca1a4.JPG");
 }
