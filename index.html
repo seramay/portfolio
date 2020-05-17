@@ -14,9 +14,8 @@
 
 <body>
   <!-- START Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pl-5 fixed-top" id="navbar-example1">
-    <!-- TODO:最上段以外で白くなり、最上段では透明になる。 -->
-    <a class="navbar-brand ff-fantasy" href="#">SakaTaQ works</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-clear pt-3 pl-5 fixed-top" id="navbar-example1">
+    <a class="navbar-brand ff-fantasy fc-white1" href="#">SakaTaQ works</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,19 +24,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item ml-5">
-          <a class="nav-link ff-fantasy" href="#profile-screen">Profile</a>
+          <a class="nav-link ff-fantasy fc-white2" href="#profile-screen">Profile</a>
+        </li>
+        <li class="nav-item ml-5">
+          <a class="nav-link ff-fantasy fc-white2" href="#skill-screen">Skill</a>
         </li>
         <!-- <li class="nav-item ml-5">
-          <a class="nav-link ff-fantasy" href="#skill-screen">Skill</a>
-        </li> -->
-        <!-- <li class="nav-item ml-5">
-          <a class="nav-link ff-fantasy" href="#service-screen">Service</a>
+          <a class="nav-link ff-fantasy fc-white2" href="#service-screen">Service</a>
         </li> -->
         <li class="nav-item ml-5">
-          <a class="nav-link ff-fantasy" href="#works-screen">Works</a>
+          <a class="nav-link ff-fantasy fc-white2" href="#works-screen">Works</a>
         </li>
         <!-- <li class="nav-item ml-5">
-          <a class="nav-link ff-fantasy" href="#contact-screen">Contact</a>
+          <a class="nav-link ff-fantasy fc-white2" href="#contact-screen">Contact</a>
         </li> -->
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -57,44 +56,43 @@
   <!-- END Navbar -->
 
   <!-- START Top -->
-  <div class="top-screen bg-overlay">
-    <div class="container vh-100">
+  <div class="top-screen bg-overlay vh-100">
+    <div class="container">
       title!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     </div>
   </div>
   <!-- END Top -->
 
     <!-- START Profile -->
-    <div class="profile-screen bg-secondary" id="profile-screen">
-      <div class="container vh-100">
-        <p class="display-3 py-5 text-center">Profile</p>
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <img class="profile-image" src="profile.JPG" alt="profile_image">
+    <div class="profile-screen bg-secondary py-100" id="profile-screen">
+      <div class="container">
+        <p class="display-3 pb-5 ff-fantasy text-center">Profile</p>
+        <div class="row align-items-center">
+          <div class="col-lg-5 text-center">
+            <img src="profile.JPG" alt="profile-image" class="profile-image">
           </div>
-          <div class="col-md-6">
-            <p class="profile-text">テキストが入りますよ？テキストが入りますよ？テキストが入りますよ？テキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
-              <br>ここにもそこにもあそこにもテキストが入りますよ？
+          <div class="col-lg-7">
+            <p class="profile-text pt-3 text-light">サカタクと申します。
+              <br>地元愛知の公立高校卒業後、車の部品工場、素材の検査をする工場、航空機の製造工場など、
+              <br>主に製造業の作業員として勤務を続けてきました。
+              <br>工場でカンヅメになっている中で、2019年頭あたりから、PayPayなどのようなインターネットを介したサービスの急激な普及を見て、Webサービス系のプログラミングに興味を持ち始めました。
+              <br>どうせなら集中的に学習を行いたいと思いスクールを受講することを決意。
+              <br>同年12月に勤務していた会社を退社。
+              <br>2020年2月17日よりTECH::CAMP(当時TECH::EXPERT)72期、短期集中フリーランスコースにて学習を開始。
+              <br>同年4月24日にて卒業。
             </p>
-            <ul class="iconbox pl-0 d-flex">
-              <li class="mt-3 mr-3 iconlist">
+            <ul class="iconbox pt-3 pl-0 d-flex">
+              <li class="mr-3 iconlist">
                 <a class="iconlink" href="https://twitter.com/seramaylilihina">
                   <i class="fz-26 fab fa-twitter-square"></i>
                 </a>
               </li>
-              <li class="mt-3 mr-3 iconlist">
+              <li class="mr-3 iconlist">
                 <a class="iconlink" href="https://seramay419plog.hatenablog.com/about">
                   <i class="fz-26 fas fa-pencil-alt"></i>
                 </a>
               </li>
-              <li class="mt-3 mr-3 iconlist">
+              <li class="mr-3 iconlist">
                 <a class="iconlink" href="https://github.com/seramay">
                   <i class="fz-26 fab fa-github"></i>
                 </a>
@@ -107,41 +105,66 @@
     <!-- END Profile -->
 
     <!-- START Skill -->
-    <!-- <div class="skill-screen  bg-radialgradient" id="skill-screen">
-      <div class="container vh-100">
+    <div class="skill-screen bg-radialgradient py-100" id="skill-screen">
+      <div class="container">
+        <p class="display-3 pb-5 ff-fantasy text-center">Skills</p>
         <div class="row">
-          <div class="col-4">left</div>
-          <div class="col-4">center</div>
-          <div class="col-4">right</div>
+          <div class="col-12">
+            <p class="h1 text-center">学習しているスキル</p>
+            <p class="mt-5 text-center">HTML, CSS, JavaScript, jQuery, Node.js, Ruby, Ruby on Rails, Linux OS(Ubuntu)</p>
+          </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- END Skill -->
 
     <!-- START Service -->
-    <!-- <div class="service-screen  bg-secondary" id="service-screen">
-      <div class="container vh-100">SERVICE</div>
+    <!-- <div class="service-screen bg-secondary py-100" id="service-screen">
+      <div class="container">
+        <p class="display-3 pb-5 ff-fantasy text-center">Services</p>
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
     </div> -->
     <!-- END Service -->
 
     <!-- START Works -->
-    <div class="works-screen  bg-secondary" id="works-screen">
-      <div class="container vh-100">
+    <div class="works-screen bg-radialgradient py-100" id="works-screen">
+      <div class="container">
+          <p class="display-3 pb-5 ff-fantasy text-center">Works</p>
         <div class="row">
-          <div class="col-4">left</div>
-          <div class="col-4">center</div>
-          <div class="col-4">right</div>
-          <div class="col-4">left</div>
-          <div class="col-4">center</div>
-          <div class="col-4">right</div>
+          <div class="col-md-4 mb-4 text-center">
+              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
+          </div>
         </div>
       </div>
     </div>
     <!-- END Works -->
 
     <!-- START Contact -->
-    <!-- <div class="contact-screen" id="contact-screen">
-      <div class="container vh-100"></div>
+    <!-- <div class="contact-screen bg-secondary py-100" id="contact-screen">
+      <div class="container">
+        <p class="display-3 pb-5 ff-fantasy text-center">Contact</p>
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
     </div> -->
     <!-- END Contact -->
 
