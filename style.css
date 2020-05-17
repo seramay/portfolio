@@ -106,9 +106,9 @@
 .bg-overlay{
   background: linear-gradient(30deg, rgba(92, 77, 66, 0.7), rgba(92, 77, 66, 0.7)), url("photo-1517162024945-595ae6bca1a4.JPG") center;
   background-size: cover;
-  background-position: center center;
   width: 100%;
-  padding-bottom: 50%;
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
 
 .title-relative{
@@ -119,10 +119,7 @@
 
 .title-absolute{
   position: absolute;
-  width: 100%;
-  top: 30%;
-  align-items: center;
-  line-height: 7em;
+  width: 95%;
 }
 
 
