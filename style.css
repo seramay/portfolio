@@ -105,7 +105,6 @@
 /* top-screen */
 .bg-overlay{
   background: linear-gradient(30deg, rgba(92, 77, 66, 0.7), rgba(92, 77, 66, 0.7)), url("photo-1517162024945-595ae6bca1a4.JPG") center;
-  /* background-image: url("photo-1517162024945-595ae6bca1a4.JPG"); */
   background-size: cover;
   background-position: center center;
   width: 100%;

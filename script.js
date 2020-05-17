@@ -1,4 +1,4 @@
-$(function () {
+$(window).on('load', function () {
   // navbarのevent
   // $('.nav-item').on({
   //   'mouseenter':function() {
