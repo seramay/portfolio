@@ -1,4 +1,19 @@
 /* general purpose */
+.bg-radialgradient{
+  background: -moz-radial-gradient(#777777, #6c757d);
+  background: -webkit-radial-gradient(#777777, #6c757d);
+  background: radial-gradient(#777777, #6c757d);
+}
+
+.ff-fantasy{
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+.fz-26{
+  font-size: 26px;
+}
+
 .h-150{
   height: 150px;
 }
@@ -7,35 +22,75 @@
   height: 100vh;
 }
 
-.ff-fantasy{
-  font-family: fantasy;
-  font-weight: bold;
+.iconlist{
+  list-style: none;
 }
 
-.bg-radialgradient{
-  background: -moz-radial-gradient(#777777, #555555, #222222);
-  background: -webkit-radial-gradient(#777777, #555555, #222222);
-  background: radial-gradient(#777777, #555555, #222222);
+.iconlink{
+  display: inline-block;
+  background-color: #ddd;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px#5b646c;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
 }
+
+.iconlink i{
+  transition: all 0.5s;
+  color: #6c757d;
+}
+
+.iconlink:hover i{
+  transform: scale(1.3, 1.3);
+}
+
+.iconlink:hover .fa-twitter-square{
+  color: rgb(29, 161, 242);
+}
+
+.iconlink:hover .fa-pencil-alt{
+  color: #111;
+}
+
+.iconlink:hover .fa-github{
+  color: #563d7c;
+}
+
 
 /* navbar */
 
-
 /* top-screen */
-/* .top-screen{
-} */
-
 .bg-overlay{
   background: linear-gradient(30deg, rgba(92, 77, 66, 0.7), rgba(92, 77, 66, 0.7)), url("photo-1517162024945-595ae6bca1a4.JPG");
   background-size: cover;
 }
 
+
+/* profile-screen */
+.profile-image{
+  margin-top: 1em;
+  transform: scale(1.2, 1.2);
+  border-radius: 40px 15px;
+}
+
+.profile-text{
+  font-size: 16px;
+}
+
+
 /* footer */
+.bg-lineargradient{
+  background: linear-gradient(to bottom, #6c757d, #444444 55%, #6c757d);
+}
 
 .copyright{
-  text-align: center;
   letter-spacing: 10px;
 }
+
 
 /*********************** test(test-pages, copy済み ***********************/
 

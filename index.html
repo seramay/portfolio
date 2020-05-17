@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
   <title>SakaTaQ Portfolio</title>
 </head>
+
 <body>
   <!-- START Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pl-4 fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3 pl-5 fixed-top" id="navbar-example1">
     <!-- TODO:最上段以外で白くなり、最上段では透明になる。 -->
     <a class="navbar-brand ff-fantasy" href="#">SakaTaQ works</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -20,13 +23,22 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link ff-fantasy" href="#">Profile <span class="sr-only">(current)</span></a>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item ml-5">
+          <a class="nav-link ff-fantasy" href="#profile-screen">Profile</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link ff-fantasy" href="#">Works</a>
+        <!-- <li class="nav-item ml-5">
+          <a class="nav-link ff-fantasy" href="#skill-screen">Skill</a>
+        </li> -->
+        <!-- <li class="nav-item ml-5">
+          <a class="nav-link ff-fantasy" href="#service-screen">Service</a>
+        </li> -->
+        <li class="nav-item ml-5">
+          <a class="nav-link ff-fantasy" href="#works-screen">Works</a>
         </li>
+        <!-- <li class="nav-item ml-5">
+          <a class="nav-link ff-fantasy" href="#contact-screen">Contact</a>
+        </li> -->
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -38,9 +50,6 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li> -->
       </ul>
     </div>
@@ -50,62 +59,133 @@
   <!-- START Top -->
   <div class="top-screen bg-overlay">
     <div class="container vh-100">
-      
+      title!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     </div>
   </div>
   <!-- END Top -->
 
-  <!-- START Profile -->
-  <div class="prifile-screen  bg-radialgradient">
-    <div class="container vh-100">profile</div>
-  </div>
-  <!-- Twitter / blog, icon-links -->
-  <!-- END Profile -->
+    <!-- START Profile -->
+    <div class="profile-screen bg-secondary" id="profile-screen">
+      <div class="container vh-100">
+        <p class="display-3 py-5 text-center">Profile</p>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img class="profile-image" src="profile.JPG" alt="profile_image">
+          </div>
+          <div class="col-md-6">
+            <p class="profile-text">テキストが入りますよ？テキストが入りますよ？テキストが入りますよ？テキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+              <br>ここにもそこにもあそこにもテキストが入りますよ？
+            </p>
+            <ul class="iconbox pl-0 d-flex">
+              <li class="mt-3 mr-3 iconlist">
+                <a class="iconlink" href="https://twitter.com/seramaylilihina">
+                  <i class="fz-26 fab fa-twitter-square"></i>
+                </a>
+              </li>
+              <li class="mt-3 mr-3 iconlist">
+                <a class="iconlink" href="https://seramay419plog.hatenablog.com/about">
+                  <i class="fz-26 fas fa-pencil-alt"></i>
+                </a>
+              </li>
+              <li class="mt-3 mr-3 iconlist">
+                <a class="iconlink" href="https://github.com/seramay">
+                  <i class="fz-26 fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Profile -->
 
-  <!-- START Skill -->
-  <div class="skill-screen  bg-radialgradient">
-    <div class="container vh-100">skills</div>
-  </div>
-  <!-- END Skill -->
+    <!-- START Skill -->
+    <!-- <div class="skill-screen  bg-radialgradient" id="skill-screen">
+      <div class="container vh-100">
+        <div class="row">
+          <div class="col-4">left</div>
+          <div class="col-4">center</div>
+          <div class="col-4">right</div>
+        </div>
+      </div>
+    </div> -->
+    <!-- END Skill -->
 
-  <!-- START Service -->
-  <!-- <div class="service-screen  bg-radialgradient">
-    <div class="container vh-100">SERVICE</div>
-  </div> -->
-  <!-- END Service -->
+    <!-- START Service -->
+    <!-- <div class="service-screen  bg-secondary" id="service-screen">
+      <div class="container vh-100">SERVICE</div>
+    </div> -->
+    <!-- END Service -->
 
-  <!-- START Works -->
-  <div class="works-screen  bg-radialgradient">
-    <div class="container vh-100">works</div>
-  </div>
-  <!-- END Works -->
+    <!-- START Works -->
+    <div class="works-screen  bg-secondary" id="works-screen">
+      <div class="container vh-100">
+        <div class="row">
+          <div class="col-4">left</div>
+          <div class="col-4">center</div>
+          <div class="col-4">right</div>
+          <div class="col-4">left</div>
+          <div class="col-4">center</div>
+          <div class="col-4">right</div>
+        </div>
+      </div>
+    </div>
+    <!-- END Works -->
 
-  <!-- START Contact -->
-  <!-- <div class="contact-screen">
-    <div class="container vh-100"></div>
-  </div> -->
-  <!-- END Contact -->
+    <!-- START Contact -->
+    <!-- <div class="contact-screen" id="contact-screen">
+      <div class="container vh-100"></div>
+    </div> -->
+    <!-- END Contact -->
 
   <!-- START Foot -->
-  <footer class="bg-lineargradient2">
+  <footer class="py-5 bg-lineargradient">
     <div class="container h-150">
-      <div class="iconbox">
-        <a href="#" class="twitter">T</a>
-        <a href="#" class="blog">B</a>
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <ul class="iconbox d-flex justify-content-center">
+            <li class="mr-3 iconlist">
+              <a class="iconlink" href="https://twitter.com/seramaylilihina">
+                <i class="fz-26 fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="mr-3 iconlist">
+              <a class="iconlink" href="https://seramay419plog.hatenablog.com/about">
+                <i class="fz-26 fas fa-pencil-alt"></i>
+              </a>
+            </li>
+            <li class="mr-3 iconlist">
+              <a class="iconlink" href="https://github.com/seramay">
+                <i class="fz-26 fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          <h5 class="ff-fantasy copyright text-white">&copy; SakaTaQ 2020</h5>
+        </div>
       </div>
-      <h5 class="ff-fantasy copyright text-white">&copy; SakaTaQ 2020</h5></div>
+    </div>
   </footer>
   <!-- END Foot -->
 
   <!-- CDN -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
