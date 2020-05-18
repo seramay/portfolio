@@ -5,6 +5,10 @@
   background: radial-gradient(#777777, #6c757d);
 }
 
+.box-shadow-gray{
+  box-shadow: 5px 5px 8px#4a535b;
+}
+
 .ff-fantasy{
   font-family: fantasy;
   font-weight: bold;
@@ -26,7 +30,6 @@
   display: inline-block;
   background-color: #ddd;
   border-radius: 25px;
-  box-shadow: 5px 5px 5px#5b646c;
   width: 50px;
   height: 50px;
   display: flex;
@@ -56,9 +59,17 @@
   color: #563d7c;
 }
 
+.mw-800{
+  max-width: 650px;
+}
+
 .py-100{
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.screen-header{
+  text-shadow: 0px 0px 20px #fff;
 }
 
 
@@ -127,11 +138,14 @@
 .profile-image{
   margin-top: 1em;
   border-radius: 40px 15px;
+  border: 3px double #2b2b2b;
 }
 
 .profile-text{
   font-size: 16px;
 }
+
+/* works-screen */
 
 
 /* footer */

@@ -1,22 +1,32 @@
 $(window).on('load', function () {
-  // navbarのevent
-  // $('.nav-item').on({
-  //   'mouseenter':function() {
-  //     let navLink = $(this).find('a').attr('href');
-  //     let position = $(navLink).offset().top;
-  //     $('body').animate({scrollTop:position}, 300)
-  //   }, 
-  //   'mouseleave':function() {
-  //     console.log('OUT');
-  //   }
-  // });
+  
+  var addImg = (img) => {
+    var html = `<img class="img-fluid" alt="image error" src="${img}">`;
+    return html;
+  }
+
+  // worksの画像をクリックすると個別のモーダルが表示されるイベント
+  $('.works-images').click(function () {
+    const kFnInit = $(this);
+    let src = kFnInit.attr('src');
+    let alt = kFnInit.attr('alt')
+    $('.modal-body').empty();
+    $('.modal-body').append(addImg(src));
+    $('.modal-title').text(alt);
+  });
+
+  // ナビゲーションタイトルをクリックするとスクロールするイベント(2種)
   $('.nav-item').click(function () {
     let navLink = $(this).find('a').attr('href');
     let position = $(navLink).offset().top;
-    $('body').animate({ 'scrollTop': position }, 300);
+    $('html,body').animate({scrollTop: position}, 400);
   });
 
-  //ナビゲーションの位置まできたら透明にするイベント
+  $('#navi-title').click(function () {
+    $('html,body').animate({ scrollTop: 0}, 400);
+  })
+
+  // 最上部まできたらナビゲーションを透明にするイベント
   var nav = $('.navbar'); //表示位置
   var navTitle = $('.navbar-brand');
   var navLink = $('.nav-link');
@@ -46,4 +56,5 @@ $(window).on('load', function () {
       }
     }
   });
+
 });

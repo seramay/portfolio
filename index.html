@@ -13,9 +13,31 @@
 </head>
 
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog mw-800" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- START Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-clear pt-3 pl-5 fixed-top" id="navbar-example1">
-    <a class="navbar-brand ff-fantasy fc-white1" href="#">SakaTaQ works</a>
+    <a class="navbar-brand ff-fantasy fc-white1" href="#" id="navi-title">SakaTaQ works</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,9 +57,9 @@
         <li class="nav-item ml-5">
           <a class="nav-link ff-fantasy fc-white2" href="#works-screen">Works</a>
         </li>
-        <!-- <li class="nav-item ml-5">
+        <li class="nav-item ml-5">
           <a class="nav-link ff-fantasy fc-white2" href="#contact-screen">Contact</a>
-        </li> -->
+        </li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -65,113 +87,128 @@
   </div>
   <!-- END Top -->
 
-    <!-- START Profile -->
-    <div class="profile-screen bg-secondary py-100" id="profile-screen">
-      <div class="container">
-        <p class="display-3 pb-5 ff-fantasy text-center">Profile</p>
-        <div class="row align-items-center">
-          <div class="col-lg-5 text-center">
-            <img src="profile.JPG" alt="profile-image" class="profile-image">
-          </div>
-          <div class="col-lg-7">
-            <p class="profile-text pt-3 text-light">サカタクと申します。
-              <br>地元愛知の公立高校卒業後、車の部品工場、素材の検査をする工場、航空機の製造工場など、主に製造業の作業員として勤務。
-              <br>工場でカンヅメになっている中で、2019年頭あたりから、PayPayなどのようなインターネットを介したサービスの急激な普及を見て、Webサービス系のプログラミングに興味を持ち始めました。
-              <br>どうせなら集中的に学習を行いたいと思いスクールを受講することを決意。
-              <br>同年12月に勤務していた会社を退社し、2020年2月17日よりTECH::CAMP(当時TECH::EXPERT)72期、短期集中フリーランスコースにて学習を開始。
-              <br>同年4月24日にて卒業。
-              <br>スクールではチャットアプリ、フリマアプリのクローンサイトの作成を学びました。
-              <br>現在はJavaScript、Node.jsを主に学習しています。
-            </p>
-            <ul class="iconbox pt-3 pl-0 d-flex">
-              <li class="mr-3 iconlist">
-                <a class="iconlink" href="https://twitter.com/seramaylilihina">
-                  <i class="fz-26 fab fa-twitter-square"></i>
-                </a>
-              </li>
-              <li class="mr-3 iconlist">
-                <a class="iconlink" href="https://seramay419plog.hatenablog.com/about">
-                  <i class="fz-26 fas fa-pencil-alt"></i>
-                </a>
-              </li>
-              <li class="mr-3 iconlist">
-                <a class="iconlink" href="https://github.com/seramay">
-                  <i class="fz-26 fab fa-github"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <!-- START Profile -->
+  <div class="profile-screen bg-secondary py-100" id="profile-screen">
+    <div class="container">
+      <p class="display-3 pb-5 ff-fantasy text-center screen-header">Profile</p>
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-center">
+          <img src="profile.JPG" alt="profile-image" class="profile-image">
+        </div>
+        <div class="col-lg-7">
+          <p class="profile-text pt-3 text-light">サカタクと申します。
+            <br>地元愛知の公立高校卒業後、車の部品工場、素材の検査をする工場、航空機の製造工場など、主に製造業の作業員として勤務。
+            <br>工場でカンヅメになっている中で、2019年頭あたりから、PayPayなどのようなサービスの急激な普及を見て、Webサービス系のプログラミングに興味を持ち始めました。
+            <br>どうせなら集中的に学習を行いたいと思いスクールを受講することを決意。
+            <br>同年12月に勤務していた会社を退社し、2020年2月17日よりTECH::CAMP(当時TECH::EXPERT)72期、短期集中フリーランスコースにて学習を開始。
+            <br>同年4月24日にて卒業。
+            <br>スクールではチャットアプリ、フリマアプリのクローンサイトの作成を学びました。
+            <br>現在はJavaScript、Node.jsを主に学習しています。
+          </p>
+          <ul class="iconbox pt-3 pl-0 d-flex">
+            <li class="mr-3 iconlist">
+              <a class="iconlink box-shadow-gray" href="https://twitter.com/seramaylilihina">
+                <i class="fz-26 fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li class="mr-3 iconlist">
+              <a class="iconlink box-shadow-gray" href="https://seramay419plog.hatenablog.com/about">
+                <i class="fz-26 fas fa-pencil-alt"></i>
+              </a>
+            </li>
+            <li class="mr-3 iconlist">
+              <a class="iconlink box-shadow-gray" href="https://github.com/seramay">
+                <i class="fz-26 fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- END Profile -->
+  </div>
+  <!-- END Profile -->
 
-    <!-- START Skill -->
-    <div class="skill-screen bg-radialgradient py-100" id="skill-screen">
-      <div class="container">
-        <p class="display-3 pb-5 ff-fantasy text-center">Skills</p>
-        <div class="row">
-          <div class="col-12">
-            <p class="h1 text-center text-white">学習しているスキル</p>
-            <p class="h5 mt-5 text-center text-white">HTML, Haml, CSS, Sass(SCSS記法), JavaScript, jQuery, Node.js, Ruby, Ruby on Rails, MySQL, Git, GitHub, Linux OS(Ubuntu)</p>
-          </div>
+  <!-- START Skill -->
+  <div class="skill-screen bg-radialgradient py-100" id="skill-screen">
+    <div class="container">
+      <p class="display-3 pb-5 ff-fantasy text-center screen-header">Skills</p>
+      <div class="row">
+        <div class="col-12">
+          <p class="h1 text-center text-white">学習しているスキル</p>
+          <p class="h5 mt-5 text-center text-white">HTML, Haml, CSS, Sass(SCSS記法), JavaScript, jQuery, Node.js, Ruby,
+            Ruby on Rails, MySQL, Git, GitHub, Linux OS(Ubuntu)</p>
         </div>
       </div>
     </div>
-    <!-- END Skill -->
+  </div>
+  <!-- END Skill -->
 
-    <!-- START Service -->
-    <!-- <div class="service-screen bg-secondary py-100" id="service-screen">
+  <!-- START Service -->
+  <!-- <div class="service-screen bg-secondary py-100" id="service-screen">
       <div class="container">
-        <p class="display-3 pb-5 ff-fantasy text-center">Services</p>
+        <p class="display-3 pb-5 ff-fantasy text-center screen-header">Services</p>
         <div class="row">
           <div class="col"></div>
         </div>
       </div>
     </div> -->
-    <!-- END Service -->
+  <!-- END Service -->
 
-    <!-- START Works -->
-    <div class="works-screen bg-radialgradient py-100" id="works-screen">
-      <div class="container">
-          <p class="display-3 pb-5 ff-fantasy text-center">Works</p>
-        <div class="row">
-          <div class="col-md-4 mb-4 text-center">
-              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
-          </div>
-          <div class="col-md-4 mb-4 text-center">
-              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
-          </div>
-          <div class="col-md-4 mb-4 text-center">
-              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
-          </div>
-          <div class="col-md-4 mb-4 text-center">
-              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
-          </div>
-          <div class="col-md-4 mb-4 text-center">
-              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
-          </div>
-          <div class="col-md-4 mb-4 text-center">
-              <img class="img-fluid" alt="image error" src="https://picsum.photos/350/225">
-          </div>
+  <!-- START Works -->
+  <div class="works-screen bg-radialgradient py-100" id="works-screen">
+    <div class="container">
+      <p class="display-3 pb-5 ff-fantasy text-center screen-header">Works</p>
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works1.png" alt="(元)カウントダウンサイト">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works2.png" alt="学習のまとめサイト">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works3.png" alt="あなたのいいところ診断(名前)">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works4.png" alt="ツイート投稿アプリ">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works5.png" alt="お絵かきサイト">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works6.png" alt="チャットアプリ">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works7.png" alt="フリマアプリ">
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <img class="img-fluid box-shadow-gray works-images" data-toggle="modal" data-target="#exampleModal"
+          src="works8.png" alt="ポートフォリオ(当サイト)">
         </div>
       </div>
     </div>
-    <!-- END Works -->
+  </div>
+  <!-- END Works -->
 
-    <!-- START Contact -->
-    <div class="contact-screen bg-secondary py-100" id="contact-screen">
-      <div class="container">
-        <p class="display-3 pb-5 ff-fantasy text-center">Contact</p>
-        <div class="row">
-          <div class="col">
-              <p class="h1 text-center text-white">お問い合わせ</p>
-              <p class="h5 mt-5 text-center text-white">sakata9works@gmail.com</p>
-          </div>
+  <!-- START Contact -->
+  <div class="contact-screen bg-secondary py-100" id="contact-screen">
+    <div class="container">
+      <p class="display-3 pb-5 ff-fantasy text-center screen-header">Contact</p>
+      <div class="row">
+        <div class="col">
+          <p class="h1 text-center text-white">お問い合わせ</p>
+          <p class="h5 mt-5 text-center text-white">sakata9works@gmail.com</p>
         </div>
       </div>
     </div>
-    <!-- END Contact -->
+  </div>
+  <!-- END Contact -->
 
   <!-- START Foot -->
   <footer class="py-5 bg-lineargradient">
@@ -180,17 +217,17 @@
         <div class="col-12">
           <ul class="iconbox pl-0 d-flex justify-content-center">
             <li class="mr-3 iconlist">
-              <a class="iconlink" href="https://twitter.com/seramaylilihina">
+              <a class="iconlink box-shadow-gray" href="https://twitter.com/seramaylilihina">
                 <i class="fz-26 fab fa-twitter-square"></i>
               </a>
             </li>
             <li class="mr-3 iconlist">
-              <a class="iconlink" href="https://seramay419plog.hatenablog.com/about">
+              <a class="iconlink box-shadow-gray" href="https://seramay419plog.hatenablog.com/about">
                 <i class="fz-26 fas fa-pencil-alt"></i>
               </a>
             </li>
             <li class="mr-3 iconlist">
-              <a class="iconlink" href="https://github.com/seramay">
+              <a class="iconlink box-shadow-gray" href="https://github.com/seramay">
                 <i class="fz-26 fab fa-github"></i>
               </a>
             </li>
