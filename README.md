@@ -1,4 +1,4 @@
 # portfolio
 
-GitHub Pages URL
+This site URL
 https://seramay.github.io/portfolio/

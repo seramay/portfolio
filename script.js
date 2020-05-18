@@ -1,18 +1,22 @@
 $(window).on('load', function () {
   
-  var addImg = (img) => {
-    var html = `<img class="img-fluid" alt="image error" src="${img}">`;
+  var addImg = (img, txt) => {
+    var html = `
+                <img class="img-fluid" alt="image error" src="${img}">
+                <p class="mt-4 pt-3 bdt-solid">${txt}</p>
+              `;
     return html;
   }
 
   // worksの画像をクリックすると個別のモーダルが表示されるイベント
   $('.works-images').click(function () {
     const kFnInit = $(this);
+    let alt = kFnInit.attr('alt');
     let src = kFnInit.attr('src');
-    let alt = kFnInit.attr('alt')
+    let txt = kFnInit.attr('data-imgtext');
     $('.modal-body').empty();
-    $('.modal-body').append(addImg(src));
     $('.modal-title').text(alt);
+    $('.modal-body').append(addImg(src, txt));
   });
 
   // ナビゲーションタイトルをクリックするとスクロールするイベント(2種)

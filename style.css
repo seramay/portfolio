@@ -146,6 +146,9 @@
 }
 
 /* works-screen */
+.bdt-solid{
+  border-top: 1px solid #555;
+}
 
 
 /* footer */
