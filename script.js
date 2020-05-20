@@ -61,4 +61,6 @@ $(window).on('load', function () {
     }
   });
 
+  // スクロールを使って section title 、背景やらを明るくするとかいうコード組んでも面白いかもね
+
 });

@@ -150,6 +150,10 @@
   border-top: 1px solid #555;
 }
 
+.click-image{
+  cursor: pointer;
+}
+
 
 /* footer */
 .bg-lineargradient{
