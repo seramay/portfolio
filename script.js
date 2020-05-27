@@ -7,6 +7,13 @@ $(window).on('load', function () {
               `;
     return html;
   }
+  var addLinkImg = (img, txt, link) =>{
+    var html = `
+                <a href="${link}" target="_blank"><img class="img-fluid" alt="image error" src="${img}"></a>
+                <p class="mt-4 pt-3 bdt-solid">${txt}</p>
+              `;
+    return html;
+  }
 
   // worksの画像をクリックすると個別のモーダルが表示されるイベント
   $('.works-images').click(function () {
@@ -14,9 +21,16 @@ $(window).on('load', function () {
     let alt = kFnInit.attr('alt');
     let src = kFnInit.attr('src');
     let txt = kFnInit.attr('data-imgtext');
-    $('.modal-body').empty();
-    $('.modal-title').text(alt);
-    $('.modal-body').append(addImg(src, txt));
+    let lnk = kFnInit.attr('data-link');
+    if (lnk !== "") {
+      $('.modal-body').empty();
+      $('.modal-title').text(alt);
+      $('.modal-body').append(addLinkImg(src, txt, lnk));
+    } else {
+      $('.modal-body').empty();
+      $('.modal-title').text(alt);
+      $('.modal-body').append(addImg(src, txt));
+    }
   });
 
   // ナビゲーションタイトルをクリックするとスクロールするイベント(2種)
